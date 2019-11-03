@@ -33,7 +33,11 @@
 		"webpack": "^4.41.2",
 		"webpack-cli": "^3.3.10"
 	},
+	"peerDependencies": {
+		"react": "16.11.0"
+	},
 	"scripts": {
-		"dev": "webpack --watch"
+		"dev": "webpack --watch",
+		"build": "webpack"
 	}
 }

@@ -8,7 +8,8 @@ module.exports = [
 		mode: "production",
 		output: {
 			path: path.resolve(__dirname, "public"),
-			filename: "[name].js"
+			filename: "[name].js",
+			libraryTarget: "commonjs2"
 		},
 		module: {
 			rules: [
@@ -23,6 +24,9 @@ module.exports = [
 					}
 				}
 			]
+		},
+		externals: {
+			react: "commonjs react" // this line is just to use the React dependency of our parent-testing-project instead of using our own React.
 		}
 	}
 ];
