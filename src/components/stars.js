@@ -15,7 +15,11 @@ export const toggleStarType = (index, fn, fn2) => {
 	fn2(index);
 };
 
-const Stars = ({ on, given, updateGiven }) => {
+const Stars = ({
+	on,
+	given,
+	updateGiven = () => console.log("no click event from parent")
+}) => {
 	const [stars, updateStars] = useState([]);
 	const [isSolid] = useState(false);
 	const [starsGiven, updateStarsGiven] = useState(given);

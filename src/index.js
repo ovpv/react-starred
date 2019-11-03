@@ -1,11 +1,15 @@
 import Stars from "./components/stars";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { render } from "react-dom";
 
 const App = () => {
+	const [given, updateGiven] = useState(3);
+	useEffect(() => {
+		console.log(given);
+	});
 	return (
 		<div>
-			<Stars given={3} on={10} />
+			<Stars given={given} on={10} updateGiven={updateGiven} />
 		</div>
 	);
 };
