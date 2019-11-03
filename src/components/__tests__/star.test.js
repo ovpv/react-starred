@@ -4,6 +4,6 @@ import renderer from "react-test-renderer";
 import Star from "../star";
 
 it("renders correctly", () => {
-  const tree = renderer.create(<Star type={StarFill} />).toJSON();
-  expect(tree).toMatchSnapshot();
+	const tree = renderer.create(<Star type={StarFill} />).toJSON();
+	expect(tree).toMatchSnapshot();
 });
