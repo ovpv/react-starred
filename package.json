@@ -5,7 +5,7 @@
 	"author": "Vishnuprasad Venugopal <vishnuprasadvenugopal@gmail.com> (https://ovpv.me)",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ashleygwilliams/my_package.git"
+		"url": "https://github.com/ovpv/react-starred/tree/npm"
 	},
 	"keywords": [
 		"react",
