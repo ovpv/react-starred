@@ -1,6 +1,6 @@
-import Stars from "./components/stars";
 import React from "react";
 import { render } from "react-dom";
+import Stars from "react-starred";
 
 const App = () => {
 	return (
